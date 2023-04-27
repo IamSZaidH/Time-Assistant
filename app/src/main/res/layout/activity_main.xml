@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:paddingTop="@dimen/_1sdp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/clock1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_235sdp"
+                    />
+
+                <DigitalClock
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clock1"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_24sdp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/_10sdp">
+                <!-- main layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Main Features"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_24sdp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="@dimen/_95sdp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/white"
+                        android:layout_marginBottom="@dimen/_12sdp"/>
+
+                    <!--                    Layout 1-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <!--                        Feature 1-->
+                        <LinearLayout
+                            android:id="@+id/speakingClock"
+                            android:layout_width="@dimen/_72sdp"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/border_feature_new"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_3sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/borderfeature"
+                                android:src="@drawable/feature1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="@dimen/_3sdp"
+                                android:text="Speak Clock"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <!--                        Feature 2-->
+                        <LinearLayout
+                            android:id="@+id/lang"
+                            android:layout_width="@dimen/_72sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:background="@drawable/border_feature_new"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_3sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/borderfeature"
+                                android:padding="@dimen/_3sdp"
+                                android:src="@drawable/languages" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="@dimen/_3sdp"
+                                android:text="Language"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <!--                        Feature 1-->
+                        <LinearLayout
+                            android:id="@+id/voice"
+                            android:layout_width="@dimen/_72sdp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_feature_new"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_3sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/borderfeature"
+                                android:src="@drawable/feature1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="@dimen/_3sdp"
+                                android:text="Voice"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--                    Layout 2-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <!--                        Feature 1-->
+                        <LinearLayout
+                            android:id="@+id/spDate"
+                            android:layout_width="@dimen/_72sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_12sdp"
+                            android:background="@drawable/border_feature_new"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_3sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/borderfeature"
+                                android:src="@drawable/date" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="@dimen/_3sdp"
+                                android:text="Speak Date"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <!--                        Feature 1-->
+                        <LinearLayout
+                            android:id="@+id/spReminder"
+                            android:layout_width="@dimen/_72sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_12sdp"
+                            android:background="@drawable/border_feature_new"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_3sdp">
+                        <LinearLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/borderfeature">
+
+                            <ImageView
+                                android:layout_marginTop="-8dp"
+                                android:layout_marginLeft="-3dp"
+                                android:layout_width="@dimen/_45sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:src="@drawable/reminder"
+                                android:padding="@dimen/_6sdp"
+
+                                />
+                        </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="@dimen/_3sdp"
+                                android:paddingTop="5dp"
+                                android:text="Reminder"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

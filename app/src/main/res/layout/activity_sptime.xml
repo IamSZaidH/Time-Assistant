@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp"
+    tools:context=".SpTime">
+
+    <DigitalClock
+        android:id="@+id/showTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_50sdp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/showDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:text=""
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:background="@drawable/borderfeature"
+        android:orientation="vertical"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="when to speak"
+            android:textColor="@color/black"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/hourly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hourly Time speaking only"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
+
+
+        <CheckBox
+            android:id="@+id/thirty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_30_minutes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/fifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_15_minutes_time_speaking_only"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+</LinearLayout>

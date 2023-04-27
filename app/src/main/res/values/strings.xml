@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Time Assistant</string>
+    <string name="_15_minutes_time_speaking_only">15 &amp; 45 minutes Time speaking only</string>
+    <string name="_30_minutes">30 minutes Time speaking only</string>
+</resources>

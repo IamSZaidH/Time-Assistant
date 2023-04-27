@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:padding="@dimen/_15sdp"
+    tools:context=".SpVoice">
+    <TextView
+        android:id="@+id/voiceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Voices"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_24sdp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/_12sdp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+</LinearLayout>
