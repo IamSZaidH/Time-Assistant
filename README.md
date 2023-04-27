@@ -5,7 +5,7 @@ With its ability to speak the time, date, and reminder sentences, Time Assistant
 
 <img src="https://github.com/IamSZaidH/Time-Assistant/blob/master/app/src/main/res/drawable/timeassistantlogo.png" style="margin-right: 10px;" height=auto width="250px">
   
-  <a href="https://github.com/IamSZaidH/Time-Assistant/blob/master/app/release/app-release.apk" rel="nofollow"><img src="https://camo.githubusercontent.com/f8cc865a8fa303cbf10e8d0451254fa21c07163dc23a5becc9c174f28f4028f7/68747470733a2f2f706c61792e676f6f676c652e636f6d2f696e746c2f656e5f75732f6261646765732f7374617469632f696d616765732f6261646765732f656e5f62616467655f7765625f67656e657269632e706e67" alt="Get it on Google Play" height="80" style="max-width: 100%;"></a>
+  <a href="https://github.com/IamSZaidH/Time-Assistant/blob/master/app/release/app-release.apk?raw=true" rel="nofollow"><img src="https://camo.githubusercontent.com/f8cc865a8fa303cbf10e8d0451254fa21c07163dc23a5becc9c174f28f4028f7/68747470733a2f2f706c61792e676f6f676c652e636f6d2f696e746c2f656e5f75732f6261646765732f7374617469632f696d616765732f6261646765732f656e5f62616467655f7765625f67656e657269632e706e67" alt="Get it on Google Play" height="80" style="max-width: 100%;"></a>
 ## Screenshot 
 
 <div style="display: flex; justify-content: center;">
